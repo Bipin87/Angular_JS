@@ -9,10 +9,13 @@
 
 <body>
   <div>
-    <h1>{{this.title}}</h1>
-    <img  class="logo" [src]="imgUrl" (click)="onClick($event)"
-           alt="The BridgeLabz logo: a Bridge to Employment through a Lab Works." >
-    <h1>Click on the logo to visit the site.</h1>
+    <h1>Hello {{this.username}} From BridgeLabz</h1>
+    <img  class="logo" [src]="imgUrl" (click)="onClick($event)" alt="The BridgeLabz logo: a Bridge to Employment through a Lab Works." >
+    <h1>Click on the logo to visit the site</h1>
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="username">
+    <br><br>
   </div>
 </body>
 
