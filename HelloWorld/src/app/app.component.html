@@ -14,7 +14,8 @@
     <h1>Click on the logo to visit the site</h1>
   </div>
   <div>
-    <input type="text" [(ngModel)]="username">
+    <input (input)="onInput($event)" [(ngModel)]="username">
+    <span class= error-output>{{this.nameError}}</span>
     <br><br>
   </div>
 </body>
